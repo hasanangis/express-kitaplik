@@ -1,29 +1,24 @@
 # 📚 Express Bookcase API
 
-A robust and modular RESTful API designed to manage a book collection. I built this project to demonstrate **backend architecture best practices**, focusing on scalability and clean code principles.
+This is a backend project developed to practice **Node.js** and **Express** fundamentals. It implements a modular RESTful API structure with CRUD operations.
 
-## 🌟 Technical Highlights
+## 🎯 Learning Outcomes
 
-This isn't just a simple server; it follows a professional **Modular Architecture**:
-
-- **Separation of Concerns:** Business logic, data models, and routing are strictly separated (`api/`, `books/`).
-- **RESTful Standards:** Full implementation of CRUD (Create, Read, Update, Delete) operations.
-- **Middleware Integration:** Custom logging middleware to track request traffic.
-- **Security Best Practices:** Sensitive configuration managed via Environment Variables (`.env`).
-- **Scalable Structure:** Designed to be easily expanded with a real database connection.
+In this project, I focused on:
+- **Modular Architecture:** Separating routers, models, and middleware for clean code.
+- **RESTful API:** Building endpoints for Create, Read, Update, and Delete operations.
+- **Middleware:** Writing custom middleware for validation (ID checks, data validation).
+- **Environment Variables:** Managing configuration securely using `.env`.
 
 ## 🛠️ Tech Stack
 
 - **Runtime:** Node.js
 - **Framework:** Express.js
-- **Architecture:** Modular Routing
-- **Tools:** Postman, Dotenv, Git
+- **Tools:** Postman, Dotenv
 
-## ⚙️ Installation & Usage
+## 🚀 How to Run
 
-To run this project locally on your machine:
-
-1.  **Clone the repository:**
+1.  **Clone the repo:**
     ```bash
     git clone [https://github.com/hasanangis/express-bookcase.git](https://github.com/hasanangis/express-bookcase.git)
     ```
@@ -33,8 +28,8 @@ To run this project locally on your machine:
     npm install
     ```
 
-3.  **Configure Environment:**
-    Create a `.env` file in the root directory and add your port:
+3.  **Setup Environment:**
+    Create a `.env` file in the root folder and add:
     ```text
     PORT=7000
     ```
@@ -44,9 +39,5 @@ To run this project locally on your machine:
     node index.js
     ```
 
-5.  **Test the Endpoints:**
-    You can test the API using Postman or your browser at:
-    `http://localhost:7000/api/books`
-
----
-*Built with ❤️ by Hasan Angiş*
+5.  **Test:**
+    Send requests to `http://localhost:7000/api/books` using Postman.
