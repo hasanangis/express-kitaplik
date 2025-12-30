@@ -1,19 +1,52 @@
-# 📚 Express Library API
+# 📚 Express Bookcase API
 
-This project is a foundational RESTful API developed using Node.js and Express. It demonstrates full CRUD (Create, Read, Update, Delete) operations with an in-memory data structure. Developed as part of the Workintech Sprint 10 curriculum.
+A robust and modular RESTful API designed to manage a book collection. I built this project to demonstrate **backend architecture best practices**, focusing on scalability and clean code principles.
 
-## 🚀 Features
+## 🌟 Technical Highlights
 
-- **GET /kitaplar**: Retrieves the list of all books.
-- **POST /kitaplar**: Adds a new book to the collection.
-- **PUT /kitaplar/:id**: Updates an existing book's details.
-- **DELETE /kitaplar/:id**: Removes a book from the collection.
+This isn't just a simple server; it follows a professional **Modular Architecture**:
 
-## 🛠️ Installation & Usage
+- **Separation of Concerns:** Business logic, data models, and routing are strictly separated (`api/`, `books/`).
+- **RESTful Standards:** Full implementation of CRUD (Create, Read, Update, Delete) operations.
+- **Middleware Integration:** Custom logging middleware to track request traffic.
+- **Security Best Practices:** Sensitive configuration managed via Environment Variables (`.env`).
+- **Scalable Structure:** Designed to be easily expanded with a real database connection.
 
-To run this project locally:
+## 🛠️ Tech Stack
 
-1. Clone the repository.
-2. Install dependencies:
-   ```bash
-   npm install
+- **Runtime:** Node.js
+- **Framework:** Express.js
+- **Architecture:** Modular Routing
+- **Tools:** Postman, Dotenv, Git
+
+## ⚙️ Installation & Usage
+
+To run this project locally on your machine:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/hasanangis/express-kitaplik.git](https://github.com/hasanangis/express-kitaplik.git)
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment:**
+    Create a `.env` file in the root directory and add your port:
+    ```text
+    PORT=7000
+    ```
+
+4.  **Start the server:**
+    ```bash
+    node index.js
+    ```
+
+5.  **Test the Endpoints:**
+    You can test the API using Postman or your browser at:
+    `http://localhost:7000/api/books`
+
+---
+*Built with ❤️ by Hasan Angiş*
